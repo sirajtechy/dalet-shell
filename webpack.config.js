@@ -13,13 +13,13 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
       remotes: {
-        daletshared:'http://localhost:4201/remoteEntry.js'
+        header:'http://localhost:4201/remoteEntry.js'
       },
       shared: {
         '@angular/core': { eager: true, singleton: true },
         '@angular/common': { eager: true, singleton: true },
         '@angular/router': { eager: true, singleton: true },
-        'daletshared': { singleton: true, eager: true }
+        
       },
     }),
   ],

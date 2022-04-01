@@ -1,3 +1,4 @@
+
 import { loadRemoteModule } from 'src/utils/federation-utils';
 import { HomeComponent } from './shell/components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -11,10 +12,10 @@ const routes: Routes = [
     path: 'daletshared',
     loadChildren: () =>
       loadRemoteModule({
-        remoteName: 'daletshared',
+        remoteName: 'header',
         remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        exposedModule: 'DaletHeaderModule',
-      }).then(m => m.DaletHeaderModule),
+        exposedModule: 'HeaderModule',
+      }).then(m => m.HeaderModule),
   },
 ];
 

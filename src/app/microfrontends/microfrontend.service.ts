@@ -30,7 +30,7 @@ export class MicrofrontendService {
       {
         // For Loading
         remoteEntry: 'http://localhost:4201/remoteEntry.js',
-        remoteName: 'daletshared',
+        remoteName: 'header',
         exposedModule: 'DaletHeaderModule',
 
         // For Routing, enabling us to ngFor over the microfrontends and dynamically create links for the routes
